@@ -1449,7 +1449,7 @@ Contact Style
   margin-top: 50px;
   background-color: #fff;
   border-radius: 25px;
-  padding: 30px 120px;
+  padding: 30px 90px;
   display: inline-block;
   position: relative;
 }
@@ -1462,7 +1462,7 @@ Contact Style
   width: 80px;
   padding: 30px 8px;
   line-height: 25px;
-  height: 9px;
+  height: 94px;
   border-radius: 15px 60px 60px 15px; 
   display: flex;
   justify-content: center;
@@ -1643,12 +1643,13 @@ footer {
   background-color: #f98900;
   vertical-align: middle;
   min-height: 150px;
-  border-radius: 150px 150px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
 }
 
 footer p {
+  padding-top: 40px;
   text-align: center;
-  line-height: 150px;
+  line-height: 20px;
   color: #fff;
   font-weight: 400;
 }
@@ -1704,6 +1705,40 @@ footer::before {
   width: 35px;
   height: 35px;
 }
+footer {
+  position: relative; /* allows absolute positioning inside */
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  height: 100px; /* optional: adjust height */
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .footer-social {
+  position: absolute;
+  bottom: 10px; /* distance from bottom */
+  right: 100px;  /* distance from right edge */
+  display: flex;
+  gap: 10px; /* space between icons */
+}
+
+footer .footer-social a img {
+  max-height: 24px; /* max height */
+  max-width: 24px;  /* max width */
+  height: auto;     /* keep aspect ratio */
+  width: auto;      /* keep aspect ratio */
+  display: block;
+  transition: transform 0.3s;
+}
+
+footer .footer-social a img:hover {
+  transform: scale(1.2); /* small hover effect */
+}
+
+
 /* 
 ---------------------------------------------
 Responsive Style
@@ -1747,9 +1782,9 @@ body {
   .header-area .main-nav .logo {
     border-right: none;
   }
-  .main-banner {
+  /* .main-banner {
     padding-top: 100px;
-  }
+  } */
   .main-banner .item {
     padding: 100px 60px 140px 60px;
     margin-left: 0px;
@@ -1900,15 +1935,6 @@ body {
   .contact-us .section-heading {
     margin-right: 0px;
   }
-  .contact-us .special-offer {
-    background-color: #f1f0fe;
-    margin-bottom: 60px;
-    padding: 34px 30px 34px 100px;
-    width: 100%;
-  }
-  .contact-us .special-offer h4 {
-    font-size: 32px;
-  }
   .contact-us .special-offer a {
     width: 40px;
     height: 40px;
@@ -1934,17 +1960,76 @@ body {
   .fun-facts:before {
     width: 95%;
   }
+  .contact-us .special-offer span.offer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f98900;
+    width: 80px;
+    padding: 30px 8px;
+    line-height: 25px;
+    height: 89px;
+    border-radius: 15px 60px 60px 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
   .contact-us .special-offer {
     margin-top: 50px;
     background-color: #fff;
     border-radius: 25px;
-    padding: 30px 40px;
+    padding: 30px 10px 30px 90px;
     display: inline-block;
     position: relative;
   }
-  .contact-us .special-offer h4 em {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
+  .contact-us .special-offer h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+}
+@media (max-width: 992px) {
+  .contact-us .special-offer {
+    background-color: #f1f0fe;
+    margin-bottom: 60px;
+    padding: 30px 30px 30px 200px;
+    width: 100%;
+  }
+  .contact-us .special-offer h4 em{
+    font-size: 28px;
+  }
+  .contact-us .special-offer span.offer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f98900;
+    width: 80px;
+    padding: 30px 8px;
+    line-height: 25px;
+    height: 95px;
+    border-radius: 15px 60px 60px 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us .special-offer {
+    background-color: #f1f0fe;
+    margin-bottom: 60px;
+    padding: 30px 30px 30px 100px;
+    width: 100%;
+  }
+  .main-banner .item h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .main-banner {
+    padding-top: 100px;
   }
 }
