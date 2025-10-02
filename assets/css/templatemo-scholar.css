@@ -1707,7 +1707,9 @@ footer::before {
 }
 footer {
   position: relative; /* allows absolute positioning inside */
-  background: #222;
+  background: #f98900;
+  display: flex;
+  justify-content: center; 
   color: #fff;
   padding: 20px;
   height: 100px; /* optional: adjust height */
@@ -1719,8 +1721,7 @@ footer p {
 
 footer .footer-social {
   position: absolute;
-  bottom: 10px; /* distance from bottom */
-  right: 100px;  /* distance from right edge */
+  bottom: 10px;
   display: flex;
   gap: 10px; /* space between icons */
 }
