@@ -1722,6 +1722,7 @@ footer p {
 footer .footer-social {
   position: absolute;
   bottom: 10px;
+  padding-bottom: 10px;
   display: flex;
   gap: 10px; /* space between icons */
 }
