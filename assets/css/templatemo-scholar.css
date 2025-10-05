@@ -1439,7 +1439,7 @@ Contact Style
   position: relative;
 }
 
-.contact-us .special-offer span.offer {
+.contact-us .special-offer a.offer {
   position: absolute;
   left: 0;
   top: 0;
@@ -1457,7 +1457,7 @@ Contact Style
   text-transform: uppercase;
 }
 
-.contact-us .special-offer span.offer em {
+.contact-us .special-offer a.offer em {
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -1865,7 +1865,7 @@ body {
   .fun-facts:before {
     width: 95%;
   }
-  .contact-us .special-offer span.offer {
+  .contact-us .special-offer a.offer {
     position: absolute;
     left: 0;
     top: 0;
@@ -1905,7 +1905,7 @@ body {
   .contact-us .special-offer h4 em{
     font-size: 28px;
   }
-  .contact-us .special-offer span.offer {
+  .contact-us .special-offer a.offer {
     position: absolute;
     left: 0;
     top: 0;
