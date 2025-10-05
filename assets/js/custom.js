@@ -141,7 +141,7 @@
 	        $('html, body').stop().animate({
 	            scrollTop: (target.offset().top) - 79
 	        }, 500, 'swing', function () {
-	            window.location.hash = target;
+	            history.pushState(null, null, target.selector);
 	            $(document).on("scroll", onScroll);
 	        });
 	    });
