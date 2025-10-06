@@ -676,15 +676,11 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.png);
+  background-image: url(../images/banner-item-01.webp);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
-}
-
-.main-banner .item-3 {
-  background-image: url(../images/banner-item-03.jpg);
+  background-image: url(../images/banner-item-02.webp);
 }
 
 .main-banner .item {
@@ -707,7 +703,7 @@ Banner Style
   margin-bottom: 50px;
 }
 
-.main-banner .item h2 {
+.main-banner .item h1 {
   font-size: 48px;
   font-weight: 700;
   color: #fff;
@@ -1696,11 +1692,11 @@ body {
     margin-left: 0px;
     text-align: center;
   }
-  .main-banner .item h2,
+  .main-banner .item h1,
   .main-banner .item p {
     width: 100%;
   }
-  .main-banner .item h2 {
+  .main-banner .item h1 {
     font-size: 36px;
     line-height: 50px;
   }
@@ -1931,7 +1927,7 @@ body {
     padding: 30px 10px 30px 100px;
     width: 100%;
   }
-  .main-banner .item h2 {
+  .main-banner .item h1 {
     font-size: 24px;
     line-height: 30px;
   }
